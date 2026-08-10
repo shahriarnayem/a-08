@@ -168,3 +168,45 @@ img {
   }
 
 }
+
+
+/* =========================
+   AUTH FORMS
+========================= */
+
+.auth-input {
+  width: 100%;
+  height: 52px;
+
+  padding: 0 16px;
+
+  border: 1px solid
+    rgb(0 0 0 / 0.12);
+
+  border-radius: 14px;
+
+  background: #f9f8f5;
+
+  color: #17201d;
+
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+}
+
+.auth-input::placeholder {
+  color: rgb(0 0 0 / 0.35);
+}
+
+.auth-input:focus {
+  border-color: #245b46;
+
+  background: white;
+
+  box-shadow:
+    0 0 0 3px
+    rgb(36 91 70 / 0.1);
+}

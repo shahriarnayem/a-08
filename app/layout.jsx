@@ -1,5 +1,7 @@
 import "./globals.css";
 
+import { Toaster } from "sonner";
+
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 
@@ -18,7 +20,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-
       <body>
 
         <Navbar />
@@ -27,8 +28,13 @@ export default function RootLayout({
 
         <Footer />
 
-      </body>
+        <Toaster
+          position="top-right"
+          richColors
+          closeButton
+        />
 
+      </body>
     </html>
   );
 }

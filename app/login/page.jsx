@@ -1,7 +1,20 @@
-export default function Page() {
+import AuthShell from "@/components/auth-shell";
+
+import LoginForm from "@/components/login-form";
+
+export const metadata = {
+  title: "Login",
+  description:
+    "Login to your TileMuse account.",
+};
+
+export default function LoginPage() {
   return (
-    <main className="p-10">
-      <h1>Page coming soon</h1>
-    </main>
+    <AuthShell
+      title="Welcome Back"
+      description="Login to continue exploring TileMuse."
+    >
+      <LoginForm />
+    </AuthShell>
   );
 }
