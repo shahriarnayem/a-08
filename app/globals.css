@@ -210,3 +210,31 @@ img {
     0 0 0 3px
     rgb(36 91 70 / 0.1);
 }
+
+
+
+
+/* =========================
+   SWIPER
+========================= */
+
+.tile-swiper {
+  padding-bottom: 48px !important;
+}
+
+.tile-swiper .swiper-pagination {
+  bottom: 5px !important;
+}
+
+.tile-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+
+  background: #245b46;
+
+  opacity: 0.3;
+}
+
+.tile-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+}

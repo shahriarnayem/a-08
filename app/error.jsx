@@ -1,28 +1,37 @@
 "use client";
 
-export default function ErrorPage({ error, reset }) {
+export default function ErrorPage({
+  error,
+  reset,
+}) {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-[#f7f5f0] px-4">
+    <main className="container-shell flex min-h-[65vh] items-center justify-center py-20">
+
       <div className="max-w-lg text-center">
-        <p className="text-sm font-semibold uppercase tracking-[0.2em] text-red-500">
+
+        <p className="text-xs font-bold uppercase tracking-[0.2em] text-red-500">
           Something went wrong
         </p>
 
-        <h1 className="mt-4 text-4xl font-black">
+        <h1 className="mt-4 text-4xl font-black tracking-[-0.04em]">
           We couldn't load this page.
         </h1>
 
-        <p className="mt-4 text-black/60">
-          {error?.message || "Please try again."}
+        <p className="mt-4 leading-7 text-black/50">
+          {error?.message ||
+            "An unexpected error occurred."}
         </p>
 
         <button
+          type="button"
           onClick={() => reset()}
-          className="mt-8 rounded-full bg-[#173f35] px-6 py-3 font-semibold text-white"
+          className="mt-8 rounded-full bg-[#245b46] px-7 py-3.5 text-sm font-bold text-white transition hover:bg-[#173f35]"
         >
           Try Again
         </button>
+
       </div>
+
     </main>
   );
 }

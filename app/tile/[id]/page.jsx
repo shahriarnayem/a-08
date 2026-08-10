@@ -27,6 +27,15 @@ export default async function TileDetailsPage({
 }) {
   const { id } = await params;
 
+  const session =
+    await getServerSession();
+
+  if (!session) {
+    redirect(
+      `/login?redirect=/tile/${id}`
+    );
+  }
+
   const tile = tiles.find(
     (item) => item.id === id
   );

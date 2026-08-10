@@ -18,7 +18,9 @@ import { authClient } from "@/lib/auth-client";
 
 import GoogleLoginButton from "@/components/google-login-button";
 
-export default function LoginForm() {
+export default function LoginForm({
+  redirectTo = "/",
+}) {
   const router = useRouter();
 
   const searchParams =
@@ -101,7 +103,7 @@ export default function LoginForm() {
       );
 
 
-      router.push("/");
+      router.push(redirectTo);
 
       router.refresh();
 
@@ -222,8 +224,9 @@ export default function LoginForm() {
 
       {/* Google */}
       <GoogleLoginButton
-        errorCallbackURL="/login?error=google"
-      />
+  callbackURL={redirectTo}
+  errorCallbackURL="/login?error=google"
+/>
 
 
       {/* Register */}

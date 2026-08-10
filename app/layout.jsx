@@ -1,3 +1,6 @@
+import "swiper/css";
+import "swiper/css/pagination";
+
 import "./globals.css";
 
 import { Toaster } from "sonner";

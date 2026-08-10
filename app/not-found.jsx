@@ -11,12 +11,12 @@ export default function NotFound() {
         </p>
 
         <h1 className="mt-5 text-4xl font-black tracking-[-0.04em]">
-          Tile not found
+          Page not found
         </h1>
 
         <p className="mx-auto mt-4 max-w-md leading-7 text-black/50">
-          The tile you're looking for does not exist
-          or may have been removed.
+          The page or tile you're looking for
+          doesn't exist.
         </p>
 
         <Link

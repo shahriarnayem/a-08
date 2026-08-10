@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import FeaturedTiles from "@/components/featured-tiles";
 import Marquee from "@/components/marquee";
+import StyleSlider from "@/components/style-slider";
 
 export default function HomePage() {
   return (
@@ -125,6 +126,36 @@ export default function HomePage() {
 
       </section>
 
+{/* =========================
+    SWIPER COLLECTION
+========================= */}
+
+<section className="bg-[#e9e1d3]">
+
+  <div className="container-shell section-space">
+
+    <div className="mb-10">
+
+      <p className="section-eyebrow">
+        Explore More
+      </p>
+
+      <h2 className="section-title">
+        Discover Different Styles
+      </h2>
+
+      <p className="section-description">
+        Swipe through materials, colors and
+        decorative styles from our tile collection.
+      </p>
+
+    </div>
+
+    <StyleSlider />
+
+  </div>
+
+</section>
 
       {/* =========================
           COLLECTION SECTION

@@ -6,6 +6,7 @@ import { toast } from "sonner";
 import { authClient } from "@/lib/auth-client";
 
 export default function GoogleLoginButton({
+  callbackURL = "/",
   errorCallbackURL = "/login?error=google",
 }) {
   const [loading, setLoading] =
@@ -32,7 +33,7 @@ export default function GoogleLoginButton({
         await authClient.signIn.social({
           provider: "google",
 
-          callbackURL: "/",
+          callbackURL,
 
           errorCallbackURL,
         });

@@ -1,5 +1,4 @@
 import AuthShell from "@/components/auth-shell";
-
 import LoginForm from "@/components/login-form";
 
 export const metadata = {
@@ -8,13 +7,25 @@ export const metadata = {
     "Login to your TileMuse account.",
 };
 
-export default function LoginPage() {
+export default async function LoginPage({
+  searchParams,
+}) {
+  const params =
+    await searchParams;
+
+  const redirectTo =
+    typeof params?.redirect === "string"
+      ? params.redirect
+      : "/";
+
   return (
     <AuthShell
       title="Welcome Back"
       description="Login to continue exploring TileMuse."
     >
-      <LoginForm />
+      <LoginForm
+        redirectTo={redirectTo}
+      />
     </AuthShell>
   );
 }
