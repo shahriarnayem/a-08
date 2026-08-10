@@ -2,27 +2,32 @@ import Link from "next/link";
 
 export default function NotFound() {
   return (
-    <main className="flex min-h-screen items-center justify-center px-4">
-      <div className="text-center">
-        <p className="text-7xl font-black text-[#d9c7aa]">
+    <main className="container-shell flex min-h-[65vh] items-center justify-center py-20">
+
+      <div className="max-w-xl text-center">
+
+        <p className="text-[90px] font-black leading-none tracking-[-0.08em] text-[#d9c7aa]">
           404
         </p>
 
-        <h1 className="mt-4 text-3xl font-black">
-          Page Not Found
+        <h1 className="mt-5 text-4xl font-black tracking-[-0.04em]">
+          Tile not found
         </h1>
 
-        <p className="mt-3 text-black/60">
-          The page you are looking for does not exist.
+        <p className="mx-auto mt-4 max-w-md leading-7 text-black/50">
+          The tile you're looking for does not exist
+          or may have been removed.
         </p>
 
         <Link
-          href="/"
-          className="mt-7 inline-block rounded-full bg-[#173f35] px-6 py-3 font-semibold text-white"
+          href="/all-tiles"
+          className="mt-8 inline-flex rounded-full bg-[#245b46] px-7 py-3.5 text-sm font-bold text-white transition hover:bg-[#173f35]"
         >
-          Back Home
+          Browse All Tiles
         </Link>
+
       </div>
+
     </main>
   );
 }
