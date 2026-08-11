@@ -125,7 +125,6 @@ export default function RegisterForm() {
         className="space-y-5"
       >
 
-        {/* Name */}
         <div>
 
           <label
@@ -149,7 +148,7 @@ export default function RegisterForm() {
         </div>
 
 
-        {/* Email */}
+
         <div>
 
           <label
@@ -173,7 +172,6 @@ export default function RegisterForm() {
         </div>
 
 
-        {/* Photo URL */}
         <div>
 
           <label
@@ -197,7 +195,6 @@ export default function RegisterForm() {
         </div>
 
 
-        {/* Password */}
         <div>
 
           <label
@@ -222,7 +219,7 @@ export default function RegisterForm() {
         </div>
 
 
-        {/* Error */}
+
         {errorMessage && (
           <div className="rounded-[14px] border border-red-200 bg-red-50 px-4 py-3 text-sm font-medium text-red-600">
             {errorMessage}
@@ -230,7 +227,7 @@ export default function RegisterForm() {
         )}
 
 
-        {/* Register */}
+  
         <button
           type="submit"
           disabled={loading}
@@ -250,7 +247,7 @@ export default function RegisterForm() {
       </form>
 
 
-      {/* Divider */}
+
       <div className="my-7 flex items-center gap-4">
 
         <div className="h-px flex-1 bg-black/10" />
@@ -264,13 +261,13 @@ export default function RegisterForm() {
       </div>
 
 
-      {/* Google */}
+
       <GoogleLoginButton
         errorCallbackURL="/register?error=google"
       />
 
 
-      {/* Login Link */}
+
       <p className="mt-7 text-center text-sm text-black/50">
         Already have an account?{" "}
 

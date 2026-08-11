@@ -22,7 +22,7 @@ export default async function MyProfilePage() {
   return (
     <main>
 
-      {/* Profile Hero */}
+
       <section className="bg-[#245b46] pb-[130px] pt-20 text-white md:pb-[150px] md:pt-24">
 
         <div className="container-shell">
@@ -45,17 +45,17 @@ export default async function MyProfilePage() {
       </section>
 
 
-      {/* Profile Card */}
+
       <section className="container-shell relative z-10 -mt-[80px] pb-20">
 
         <div className="mx-auto max-w-4xl overflow-hidden rounded-[30px] border border-black/10 bg-white shadow-[0_20px_70px_rgba(0,0,0,0.08)]">
 
-          {/* Top */}
+
           <div className="flex flex-col gap-6 border-b border-black/10 p-7 sm:flex-row sm:items-center sm:justify-between md:p-10">
 
             <div className="flex flex-col gap-5 sm:flex-row sm:items-center">
 
-              {/* Profile Image */}
+
               {user.image ? (
                 <img
                   src={user.image}
@@ -90,7 +90,7 @@ export default async function MyProfilePage() {
             </div>
 
 
-            {/* Step 9 Button */}
+
             <Link
               href="/my-profile/update"
               className="inline-flex w-fit rounded-full bg-[#245b46] px-6 py-3 text-sm font-bold text-white transition hover:bg-[#173f35]"
@@ -101,7 +101,7 @@ export default async function MyProfilePage() {
           </div>
 
 
-          {/* Profile Info */}
+
           <div className="grid gap-px bg-black/10 sm:grid-cols-2">
 
             <ProfileItem
@@ -131,7 +131,7 @@ export default async function MyProfilePage() {
           </div>
 
 
-          {/* User ID */}
+
           <div className="border-t border-black/10 p-7 md:p-10">
 
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-black/35">

@@ -9,7 +9,7 @@ export const metadata = {
 export default function AllTilesPage() {
   return (
     <main>
-      <section className="bg-[#245b46] pb-[150px] pt-20 text-white md:pb-[170px] md:pt-24">
+      <section className="bg-[#245b46] p-[80px] text-white md:pb-[170px] md:pt-24">
         <div className="container-shell text-center">
           <p className="text-xs font-bold uppercase tracking-[0.3em] text-[#f2c55c]">
             Tile Gallery
